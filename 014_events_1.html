@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+    HTML Events
+        Eventos em HTML são 'coisas' que  acontecem com elementos HTML. Quando JS é utilizado em páginas HTML, JS pode 'reagir' a esses eventos. Alguns exemplos de eventos em HTML:
+            * Uma página HTML carregou.
+            * Um campo HTML foi alterado.
+            * Um botão HTML foi acionado (clicado).
+-->
+<html lang="pt-br">
+    <head>
+    </head>
+    <body>
+        <h2>HTML Eventos</h2>
+        <p>Clique no botão abaixo para exibir a data.</p>
+        <script>
+            function datetimeLocal() {
+                return window.document.getElementById('datetime').innerHTML = Date()
+            }
+        </script>
+        <button type="button" onclick="datetimeLocal()">Que horas são?</button>
+        <p id="datetime"></p>
+    </body>
+</html>

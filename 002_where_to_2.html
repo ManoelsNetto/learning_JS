@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Código JavaScript no Body</h2>
+        <p id="nomeFuncao">Um parágrafo</p>
+        <button onclick="nomeFuncao()" type="button">Trocar</button>
+        <script>
+            function nomeFuncao() {
+                document.getElementById('nomeFuncao').innerHTML = 'Parágrafo alterado.'
+            }
+        </script>
+    </body>
+</html>

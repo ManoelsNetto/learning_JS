@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font: normal 18pt verdana;
+                margin: 94.5px;
+            }
+            header {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="text"></div>
+        <script>
+            var header = 'Concordia'
+            
+            var html = `<header><h2>${header}</h2></header>` // título
+            
+            html += '<img src="/curso_js/w3_schools/images/concordia-moon.webp" alt="Concordian moon" width="40%" style="display:block;margin:auto;">' // imagem
+
+            let paragraphs = [
+                '<strong>Concordia</strong> was a moon of the planet Mandalore. It was governed by Pre Vizsla. The Death Watch, which was in fact led by Vizsla, used the abandoned mines on Concordia as secret hideouts.', 
+                'Prior to the end of Mandalore\'s wars, insurgents turned Concordia into a mining base. The mines almost destroyed the moon\'s forest. However, when the war ended, the mines were abandoned and the forests began to grow back. After the Mandalorian Civil War, all of Mandalore\'s warriors were exiled to Concordia by the New Mandalorians and were presumed to have died out.',
+                'By the time of the Clone Wars, Concordia had become a province of Mandalore with its own governor. However, Concordia\'s governor, Pre Vizsla of House Vizsla\'s Clan Vizsla, was secretly leading the splinter group, Death Watch from the mines. The Children of the Watch later survived the Night of a Thousand Tears by hiding on Concordia.'
+            ]
+
+            for (const p of paragraphs) {
+                html += `<p>${p}</p>`
+            }
+
+            window.document.getElementById('text').innerHTML = html
+        </script>
+    </body>
+</html>
